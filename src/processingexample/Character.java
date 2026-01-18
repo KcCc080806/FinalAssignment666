@@ -9,27 +9,21 @@ package processingexample;
  * @author karenchen
  */
 public class Character {
-    protected String name;
-    protected int x;
-    protected int y;
-    protected int power;
-    // intstance variable
+    protected int health;
     
-    // static variable
-    protected static int totalCharacters = 0;
-    
-    // overloaded constructors
     public Character() {
-        this("Unknown",0,0,10);
+        this.health = 100;
     }
     
-    public Character(String name, int x, int y, int power) {
-        this.name = name;
-        this.x = x;
-        this.y = y;
-        this.power = power;
-        totalCharacter++;
+    public Character(int health) {
+        this.health = health;
     }
     
+    public void act() {
+        System.out.println("The character is moving.");
+    }
     
-
+    public int getHealth() {
+        return health;
+    }
+}

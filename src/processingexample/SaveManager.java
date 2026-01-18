@@ -8,10 +8,6 @@ package processingexample;
  *
  * @author karenchen
  */
-public class Main {
-    public static void main(String[] args) {
-        Game game = new Game(); //create Game object
-        game.start(); //start the game       
-    }
+public class SaveManager {
     
 }
